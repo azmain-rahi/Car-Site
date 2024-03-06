@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='container'>
+    <h1> Delete Page </h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="pk" class="form-label">pk</label>
+            <input type="text" class="form-control" id="pk" name='pk'>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Delete</button>
+</form>
+<h1>{{have_use}}</h1>
+</div>
+{% endblock content %}
